@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Smartphone X", "category": "Electronics", "tags": ["phone","camera"] },
+  { "id": 2, "name": "Laptop Pro 15", "category": "Computers", "tags": ["laptop","pro"] },
+  { "id": 3, "name": "USB-C Charger", "category": "Accessories", "tags": ["charger","usb-c"] },
+  { "id": 4, "name": "Wireless Earbuds", "category": "Audio", "tags": ["earbuds","wireless"] }
+]
