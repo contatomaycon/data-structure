@@ -10,19 +10,19 @@ Sistema de **busca** e **recomendação** para catálogos de produtos, com foco 
 
 ## Como executar o sistema de busca
 1. Instale o Rust (via `rustup`).
+
 2. No diretório do projeto:
-   ```bash
-   cargo run
-   cargo run --release
-   ```
-3. Executar o binário compilado:
-   ```bash
-   ./target/release/megastore_search
-   ```
-4. Executar com parâmetros:
-   ```bash
-   ./target/release/megastore_search --input products.json --query Pro --id 1 --depth 
-   ```
+    ```bash
+    cargo run
+    cargo run --release
+    ```
+3. Executar
+    ```bash
+    cargo run -- --query "gaming keyboard" --id 3 --k 3
+    ```
+    ```bash
+    cargo run -- --input products.json --query "smartphone samsung" --id 42 --k 5
+    ```
 
 ### Parâmetros de CLI
 - `--input <arquivo>`: JSON com a lista de produtos (opcional; se ausente, usa dados de exemplo).
@@ -62,16 +62,6 @@ cargo test nome_do_teste
   - CLI com `clap`, leitura opcional de `products.json`, execução de busca e recomendações.
 - **Testes (`tests/test_catalogue.rs`)**
   - Verificam busca por termo e recomendação por similaridade.
-
-Estrutura resumida:
-```
-src/
-  lib.rs 
-  main.rs
-tests/
-  test_catalogue.rs
-products.json
-```
 
 ## Algoritmos e estruturas de dados utilizados
 - **Tabelas hash (`HashMap`)** para:

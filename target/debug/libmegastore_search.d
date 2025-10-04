@@ -1,0 +1,1 @@
+/home/maycon/data-structure/target/debug/libmegastore_search.rlib: /home/maycon/data-structure/src/catalogue.rs /home/maycon/data-structure/src/graph.rs /home/maycon/data-structure/src/indexer.rs /home/maycon/data-structure/src/lib.rs /home/maycon/data-structure/src/models.rs /home/maycon/data-structure/src/normalizer.rs /home/maycon/data-structure/src/search.rs
